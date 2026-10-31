@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Cápsula 2026: un experimento de programación para enviar un mensaje al futuro."
+    >
+
+    <title>Cápsula 2026</title>
+    <link rel="stylesheet" href="UT3_Capsula_2026.css">
+</head>
+
+<body>
+    <main>
+
+        <!-- PRESENTACIÓN -->
+        <header>
+            <h1>CÁPSULA 2026</h1>
+            <p>Experimento de programación</p>
+        </header>
+
+        <!-- INTRODUCCIÓN Y ENVÍO -->
+        <section id="experimento" aria-labelledby="introduccion">
+
+            <h2 id="introduccion">La cápsula del tiempo</h2>
+
+            <p>Año 2026. Los viajes en el tiempo todavía no existen.</p>
+
+            <p>
+                Como ejercicio de programación, hemos creado
+                una cápsula del tiempo digital para enviar
+                un mensaje al futuro.
+            </p>
+
+            <p>
+                <strong>
+                    Escribe tu mensaje y pulsa «Enviar cápsula»
+                    para iniciar el experimento.
+                </strong>
+            </p>
+
+            <label for="mensajeUsuario">
+                Tu mensaje para el futuro:
+            </label>
+
+            <textarea
+                id="mensajeUsuario"
+                name="mensajeUsuario"
+                rows="4"
+                maxlength="1000"
+                placeholder="Amable futuro..."
+            ></textarea>
+
+            <button id="ejecutar" type="button">
+                Enviar cápsula
+            </button>
+        </section>
+
+        <!-- TRANSMISIÓN: CONTENIDO MODIFICADO DESDE JAVASCRIPT -->
+        <section aria-label="Estado de la cápsula">
+            <p id="mensaje" role="status" aria-live="polite">
+                Sistema preparado.
+            </p>
+        </section>
+
+        <!-- PROTOCOLO 01: MISIÓN OCULTA INICIALMENTE -->
+        <section id="mision" aria-labelledby="tituloMision" hidden>
+
+            <h2 id="tituloMision">
+                PROTOCOLO 01 — LA PRIMERA MISIÓN
+            </h2>
+
+            <p>No sabemos cuánto tiempo permanecerá abierto este canal.</p>
+
+            <p>Tu mensaje ha llegado más lejos de lo que imaginas.</p>
+
+            <p>Necesitamos tu ayuda.</p>
+
+            <p class="pista">
+                PISTA 001: El tiempo no siempre avanza en una sola dirección.
+            </p>
+
+            <h3>¿Aceptas la misión?</h3>
+
+            <div class="acciones">
+                <button id="aceptar" type="button">
+                    Aceptar misión
+                </button>
+
+                <button id="rechazar" type="button">
+                    Rechazar misión
+                </button>
+            </div>
+
+            <p id="resultado" role="status" aria-live="polite"></p>
+        </section>
+
+    </main>
+
+    <script src="UT3_Capsula_2026.js"></script>
+</body>
+</html>
